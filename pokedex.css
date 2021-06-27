@@ -1,0 +1,284 @@
+body, button {
+  color: #222;
+  font-family: 'Century Gothic', 'Helvetica', sans-serif;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+div > img {
+  display: block;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#pokedex-view {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+  height: 520px;
+  min-width: 200px;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-none;
+  width: 800px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.card, #pokedex-view {
+  border: 5px outset #777;
+  border-radius: 15px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#p1, #p2 {
+  display: flex;
+}
+
+.card {
+  height: 520px;
+  position: relative;
+}
+
+.card-container {
+  margin-right: auto;
+  width: 350px;
+}
+
+.info {
+  font-size: 11pt;
+  font-style: italic;
+  height: 60px;
+  margin: auto auto;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  overflow-y: scroll;
+  padding: 4px;
+  text-align: center;
+  width: 90%;
+}
+
+.pokepic {
+  height: 80%;
+  object-fit: contain;
+  width: 80%;
+}
+
+.pokemon-pic {
+  border: 4px solid #999;
+  border-radius: 15px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+#results-container {
+  margin-left: 50px;
+  margin-right: 0;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.card > img, .moves img {
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+}
+
+.type {
+  float: left;
+  margin: 3px 5px 3px 3px;
+}
+
+.weakness {
+  bottom: 0;
+  left: 3px;
+  position: absolute;
+}
+
+.moves {
+  font-size: 12pt;
+  margin: auto auto;
+  width: 70%;
+}
+
+.moves button {
+  background-color: #f7f7f7;
+  border: 5px outset #999;
+  border-radius: 6px;
+  box-shadow: 1px 3px #999;
+  font-size: 12pt;
+  padding: 2px 10px 2px 10px;
+  margin: 5px 0;
+  text-align: left;
+  transition-duration: 0.4s;
+  width: 100%;
+}
+
+#p1 .moves button:hover {
+  background-color: #ccc;
+}
+
+#p1 .moves button:active:not([disabled]) {
+  background-color: #888;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+.moves img {
+  float: left;
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.moves .dp {
+  float: right;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.moves .move {
+  font-weight: bold;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.hp {
+  float: right;
+  margin: 15px;
+}
+
+#loading {
+  margin-top: 200px;
+  width: 80px;
+}
+
+.buffs {
+  width: 50px;
+  padding-top: 40px;
+}
+
+.sprite {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  padding: 1px;
+  filter: brightness(0);
+}
+
+.found {
+  filter: brightness(100%);
+}
+
+.buff, .debuff {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-right: 2px;
+  background-size: 30px 30px;
+}
+
+.accuracy.buff {
+  background-image: url('https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/accuracy-buff.png');
+}
+
+.attack.buff {
+  background-image: url('https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/attack-buff.png');
+}
+
+.defense.buff {
+  background-image: url('https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/defense-buff.png');
+}
+
+.accuracy.debuff {
+  background-image: url('https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/accuracy-debuff.png');
+}
+
+.attack.debuff {
+  background-image: url('https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/attack-debuff.png');
+}
+
+.defense.debuff {
+  background-image: url('https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/defense-debuff.png');
+}
+
+#endgame, #flee-btn, #start-btn {
+  background-color: #fff;
+  border: 3px inset #666;
+  border-radius: 8px;
+  display: block;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 5px auto;
+  padding: 8px;
+  width: 250px;
+}
+
+#endgame, #flee-btn, #start-btn, #p1 .moves button, .found {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hp-info {
+  height: 30px;
+  line-height: 1em;
+  margin-bottom: 0.3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hp-info p {
+  font-size: 20pt;
+  font-weight: bold;
+  width: 15%;
+  margin-right: 3%;
+}
+
+.health-bar {
+  width: 100%;
+  background-color: green;
+  height: 20pt;
+  border: 4px inset darkgreen;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.low-health {
+  background-color: red;
+  border: 4px inset darkred;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+}

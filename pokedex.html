@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Pokedex</title>
+    <link href='pokedex.css' rel='stylesheet' />
+    <script src='pokedex.js'></script>
+  </head>
+  <body>
+    <header>
+      <h1>Your Pokedex</h1>
+    </header>
+
+    <main>
+      <div id='p1'>
+
+        <div class='card-container'>
+          <div class='hidden hp-info'>
+            <p>HP:</p>
+            <div class='health-bar'></div>
+          </div>
+
+          <div class='card'>
+            <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/normal.jpg' alt='type' class='type' />
+            <span class='hp'>60HP</span>
+            <h2 class='name'>Pokemon Name</h2>
+            <div class='pokemon-pic'>
+              <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/images/pokeball.png' alt='pokemon' class='pokepic' />
+            </div>
+            <p class='info'>Description Here</p>
+            <div class='moves'>
+              <button disabled>
+                <span class='move'>Move Name Here</span> <span class='dp'></span>
+                <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/fighting.jpg' alt='Pokemon move' />
+              </button>
+              <button disabled>
+                <span class='move'>Move Name Here</span> <span class='dp'></span>
+                <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/fighting.jpg' alt='Pokemon move' />
+              </button>
+              <button disabled>
+                <span class='move'>Move Name Here</span> <span class='dp'></span>
+                <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/fighting.jpg' alt='Pokemon move' />
+              </button>
+              <button disabled>
+                <span class='move'>Move Name Here</span> <span class='dp'></span>
+                <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/fighting.jpg' alt='Pokemon move' />
+              </button>
+            </div>
+            <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/fighting.jpg' alt='weakness' class='weakness' />
+          </div>
+
+          <button class='hidden' id='start-btn'>Choose This Pokemon!</button>
+          <button class='hidden' id='flee-btn'>Flee the Battle!</button>
+          <button class='hidden' id='endgame'>Back to Pokedex</button>
+        </div>
+      </div>
+
+      <div id='pokedex-view'></div>
+
+      <div class='hidden' id='results-container'>
+        <p class='hidden' id='p1-turn-results'></p>
+        <p class='hidden' id='p2-turn-results'></p>
+        <img class='hidden' id='loading' alt='loading'
+             src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/loading-pikachu.gif' />
+      </div>
+
+      <div class='hidden' id='p2'>
+        <div class='card-container'>
+          <div class='hp-info'>
+            <p>HP:</p>
+            <div class='health-bar'></div>
+          </div>
+
+          <div class='card'>
+            <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/normal.jpg' alt='type' class='type' />
+            <span class='hp'>60HP</span>
+            <h2 class='name'>Pokemon Name</h2>
+            <div class='pokemon-pic'>
+              <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/images/pokeball.png' alt='pokemon' class='pokepic' />
+            </div>
+            <p class='info'>Description Here</p>
+            <div class='moves'>
+              <button disabled>
+                <span class='move'>Move Name Here</span> <span class='dp'></span>
+                <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/fighting.jpg' alt='Pokemon move' />
+              </button>
+              <button disabled>
+                <span class='move'>Move Name Here</span> <span class='dp'></span>
+                <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/fighting.jpg' alt='Pokemon move' />
+              </button>
+              <button disabled>
+                <span class='move'>Move Name Here</span> <span class='dp'></span>
+                <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/fighting.jpg' alt='Pokemon move' />
+              </button>
+              <button disabled>
+                <span class='move'>Move Name Here</span> <span class='dp'></span>
+                <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/fighting.jpg' alt='Pokemon move' />
+              </button>
+            </div>
+            <img src='https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/icons/fighting.jpg'
+                 alt='weakness' class='weakness' />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Image credits:
+        <a href='https://bulbapedia.bulbagarden.net/wiki/Bulbapedia:Copyrights'>Bulbapedia</a>
+        (characters &copy; by Nintendo)
+      </p>
+    </footer>
+  </body>
+</html>
